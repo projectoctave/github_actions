@@ -1,6 +1,8 @@
 cd ~/github_actions
 git init
-git commit -m "my first push"
 git branch -M main
 git remote add origin https://github.com/projectoctave/github_actions.git
-git push origin main --force
+
+git add .github/workflows/my_first_workflow.yml
+git commit -m "Add first GitHub Action workflow"
+git push -u origin main --force
